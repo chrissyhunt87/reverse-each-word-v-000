@@ -6,3 +6,10 @@ def reverse_each_word(sentence)
   end
   reversed_words.join(" ")
 end
+
+def reverse_each_word(sentence)
+  words = sentence.split(" ") # => ["Hi", "there", "Ruby"]
+  words.collect do |word|
+    word.reverse!
+  end
+end
